@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style2.css">
+    <title>GALLERY PAGE</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home </a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <div class="container">
+        <h1>GALLERY</h1>
+        <div class="row">
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/Female Brand Photoshoot.jpg">
+                    </div>
+                    <p>Friend</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/The Ultimate Black Wedding Dress Guide.jpg">
+                    </div>
+                    <p>Dress</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/Meet Our Newest GMG Team Member - Julia Berolzheimer.jpg">
+                    </div>
+                    <p>Work</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/ss.jpg">
+                    </div>
+                    <p>Background</p>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/Female Brand Photoshoot.jpg">
+                        <img src="images/icons8-video-gallery-64.png" class="play-btn" onclick="playvideo('https://www.bing.com/videos/search?q=Album+Photography&&view=detail&mid=2240B53CB874E70023342240B53CB874E7002334&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3DAlbum%2BPhotography%26FORM%3DRESTAB')">
+                    </div>
+                    <p>nnnnnnnnnnnn</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/The Ultimate Black Wedding Dress Guide.jpg">
+                        <img src="images/icons8-video-gallery-64.png" class="play-btn" onclick="playvideo('movie.mp4')">
+                    </div>
+                    <p>nnnnnnnnnnnn</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/Meet Our Newest GMG Team Member - Julia Berolzheimer.jpg">
+                        <img src="images/icons8-video-gallery-64.png" class="play-btn" onclick="playvideo('movie.mp4')">
+                    </div>
+                    <p>nnnnnnnnnnnn</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="images/ss.jpg">
+                        <img src="images/icons8-video-gallery-64.png" class="play-btn" onclick="playvideo('movie.mp4')">
+                    </div>
+                    <p>nnnnnnnnnnnn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-player" id="videoplayer">
+        <video width="100%" controls autoplay id="myvideo">
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+        <img src="images/icons8-video-gallery-64.png" class="close-btn" onclick="stopvideo()">
+    </div>
+<script>
+    var videoplayer=document.getElementById("videoplayer");
+    var myvideo=document.getElementById("myvideo");
+    function stopvideo(){
+        videoplayer.style.display= "none";
+    }
+    function playvideo(file){
+        myvideo.src = file;
+        videoplayer.style.display = "block";
+    }
+
+</script>    
+        
+</body>
+</html>
